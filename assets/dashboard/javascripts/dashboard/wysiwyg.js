@@ -26,10 +26,12 @@ Quill.register(Linebreak);
 const options = {
   modules: {
     toolbar: [
-      [{ header: [2, 3, false] }],
+      [{ header: [2, 3, 4, false] }],
       ['bold', 'italic', 'underline', 'strike'],
-      ['link', 'blockquote', 'code-block'],
+      [{ 'direction': 'rtl'}, { 'align': [] }], 
+      ['link', 'blockquote'],
       [{ list: 'ordered' }, { list: 'bullet' }],
+      ['clean']
     ],
     clipboard: {
       matchVisual: false,
@@ -58,7 +60,8 @@ const options = {
       },
     },
   },
-  theme: 'snow',
+  theme: 'bubble',
+  // theme: 'snow',
 };
 
 document.addEventListener("turbolinks:load", () => {
