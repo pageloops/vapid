@@ -97,6 +97,8 @@
     "write-pkg": "^3.1.0"
   },
   "devDependencies": {
+    "@riotjs/compiler": "^4.10.0",
+    "@riotjs/webpack-loader": "^4.0.3",
     "eslint": "^7.1.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
